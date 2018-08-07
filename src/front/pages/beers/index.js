@@ -1,9 +1,10 @@
+
 // @flow
 
 // #region imports
 import compose from 'recompose/compose';
-import Home from './Home';
+import Beers from './Beers';
 import withEnterAnimation from '../../hoc/withEnterAnimation';
 // #endregion
 
-export default compose(withEnterAnimation(/* no option yet */))(Home);
+export default compose(withEnterAnimation(/* no option yet */))(Beers);

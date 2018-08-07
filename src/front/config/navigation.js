@@ -16,12 +16,18 @@ export type Navigation = {
 // #endregion
 
 const navigation = {
-  brand: 'React Bootstrap Starter',
+  brand: 'OrangaChang Brewing Company',
   leftLinks: [],
   rightLinks: [
     {
       label: 'Home',
       link: '/',
+    },
+    {
+      label: 'Beers',
+      link: '/beers',
+      view: 'beers',
+      isRouteBtn: true,
     },
     {
       label: 'Protected',
@@ -33,6 +39,12 @@ const navigation = {
       label: 'About',
       link: '/about',
       view: 'about',
+      isRouteBtn: true,
+    },
+    {
+      label: 'Disconnect',
+      link: '/login',
+      view: 'login',
       isRouteBtn: true,
     },
   ],
