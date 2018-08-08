@@ -17,7 +17,12 @@ export type Navigation = {
 
 const navigation = {
   brand: 'OrangaChang Brewing Company',
-  leftLinks: [],
+  leftLinks: [
+  {
+      label: 'Home',
+      link: '/',
+    },
+  ],
   rightLinks: [
     {
       label: 'Home',
