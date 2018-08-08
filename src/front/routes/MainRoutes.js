@@ -14,7 +14,7 @@ const MainRoutes = () => {
       <Route exact path="/beers" component={Beers} />
       <Route path="/about" component={About} />
       {/* private views: need user to be authenticated */}
-      <PrivateRoute path="/protected" component={Protected} />
+      {/* <PrivateRoute path="/protected" component={Protected} /> */}
       {/* page not found */}
       <Route component={PageNotFound} />
     </Switch>

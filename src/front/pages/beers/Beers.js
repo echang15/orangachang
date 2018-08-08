@@ -2,11 +2,14 @@
 
 // #region imports
 import React, { PureComponent } from 'react';
+import { Fragment } from 'react'
 import {
   type Match,
   type Location,
   type RouterHistory,
 } from 'react-router-dom';
+import BeerList from '../../components/beerlist/beerlist'
+import Jumbotron from '../../components/jumbotron/Jumbotron';
 // #endregion
 
 // #region flow types
@@ -32,7 +35,9 @@ class Beers extends PureComponent<Props, State> {
 
         <h1>Planned Beers for the future</h1>        
 
-
+        <Fragment>
+         <BeerList />
+        </Fragment>
 
       </div>
     );

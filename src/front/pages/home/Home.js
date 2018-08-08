@@ -32,7 +32,9 @@ class Home extends PureComponent<Props, State> {
   render() {
     return (
       <div>
-        <img src={require('../../../../images/logo.jpg')} class="img-responsive center-block" />
+        <div class="text-center">
+          <img src={require('../../../../images/logo.jpg')} class="img-responsive center-block" />
+        </div>
         <Jumbotron>
           <HomeInfo>
             <MainTitle>OrangaChang Brewing Company</MainTitle>

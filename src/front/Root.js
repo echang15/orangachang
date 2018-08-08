@@ -38,11 +38,11 @@ class Root extends Component<Props, State> {
         <AuthProvider>
           <ScrollToTop>
             <Switch>
-              <Route exact path="/login" component={LoadableLogin} />
+              {/* <Route exact path="/login" component={LoadableLogin} /> */}
               {/* Application with main layout (could have multiple applications with different layouts) */}
               <MainApp />
               {/* logout: just redirects to login (App will take care of removing the token) */}
-              <LogoutRoute path="/logout" />
+              {/* <LogoutRoute path="/logout" /> */} 
               <Route component={LoadablePageNotFound} />
             </Switch>
           </ScrollToTop>

@@ -29,24 +29,24 @@ const navigation = {
       view: 'beers',
       isRouteBtn: true,
     },
-    {
-      label: 'Protected',
-      link: '/protected',
-      view: 'protected',
-      isRouteBtn: true,
-    },
+    // {
+    //   label: 'Protected',
+    //   link: '/protected',
+    //   view: 'protected',
+    //   isRouteBtn: true,
+    // },
     {
       label: 'About',
       link: '/about',
       view: 'about',
       isRouteBtn: true,
     },
-    {
-      label: 'Disconnect',
-      link: '/login',
-      view: 'login',
-      isRouteBtn: true,
-    },
+    // {
+    //   label: 'Disconnect',
+    //   link: '/login',
+    //   view: 'login',
+    //   isRouteBtn: true,
+    // },
   ],
 };
 

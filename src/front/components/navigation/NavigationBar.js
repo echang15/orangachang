@@ -80,7 +80,7 @@ class NavigationBar extends PureComponent<Props, State> {
             {isAuthenticated && (
               <NavItem>
                 <NavLink href="#" onClick={this.handlesDisconnect}>
-                  Disconnect
+                  DisconnectMe
                 </NavLink>
               </NavItem>
             )}

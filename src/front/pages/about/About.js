@@ -26,18 +26,54 @@ class About extends PureComponent<Props, State> {
   render() {
     return (
       <div>
-        <h1>About Us</h1>
-        There's actually not much to say. I'm just a Software Engineer who likes brewing a little too much.
+        <div class="row my-4">
+        <div class="col-lg-8">
+          <img class="img-fluid rounded" src="http://placehold.it/900x400" alt="" />
+        </div>
+        <div class="col-lg-4">
+          <h1>About Us</h1>
+          <p>There is actually not too much to say. I am just a Software Engineer who likes brewing a little too much</p>          
+        </div>
+      </div>
 
-        Frequent Brewing Partners <br />
-        Rob
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h2 class="card-title">Brewery</h2>
+              <p class="card-text">We have a pretty simple setup. We run a 30amp 5500W electric brew-in-a-bag setup. This is controlled via a homemade installation of CraftBeerPi.</p>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="btn btn-primary">More Info</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h2 class="card-title">Collaborators</h2>
+              <p class="card-text">
+                Rob Riedel <br />
 
-        <h1>About The Brewery</h1>
-
-        We have a pretty simple setup. We run a 30amp 5500W electric brew-in-a-bag setup. This is controlled via a homemade installation of CraftPeerPi v2.
-
-
-        CraftBeerPi - http://www.craftbeerpi.com
+              </p>
+            </div>            
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h2 class="card-title">Credits</h2>
+              <p class="card-text">
+                Logo - Caitlin
+                CraftPeerPi - www.CraftBeerPi
+              </p>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="btn btn-primary">More Info</a>
+            </div>
+          </div>
+        </div>
+      </div>
       </div>
     );
   }
