@@ -16,7 +16,7 @@ class BeerList extends Component {
   componentDidMount() {
     this.setState({ isLoading: true });
 
-    axios.get(API, { crossdomain: true })
+    axios.get(API,  { 'headers' : {"Access-Control-Allow-Origin": "*" , "Access-Control-Allow-Headers": "Origin, X-Requested-With, Content-Type, Accept, Authorization"} })
       .then(
         function (response) {
           console.log(response);
