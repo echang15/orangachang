@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 
-const API = 'https://hn.algolia.com/api/v1/search?query=';
-const DEFAULT_QUERY = 'redux';
-
+const API = 'https://olmtnznjo8.execute-api.us-east-1.amazonaws.com/api/beers/';
 class BeerList extends Component {
   constructor(props) {
     super(props);
@@ -18,11 +16,16 @@ class BeerList extends Component {
   componentDidMount() {
     this.setState({ isLoading: true });
 
-    axios.get(API + DEFAULT_QUERY)
-      .then(result => this.setState({
-        hits: result.data.hits,
-        isLoading: false
-      }))
+    axios.get(API, { crossdomain: true })
+      .then(
+        function (response) {
+          console.log(response);
+        })
+
+        // result => this.setState({
+        // hits: result.data.hits,
+        // isLoading: false
+      //}))
       .catch(error => this.setState({
         error,
         isLoading: false
@@ -44,10 +47,10 @@ class BeerList extends Component {
       <div>
       {hits.map(hit =>
         <div class="card">
-          <h5 class="card-header">Featured</h5>
+          <h5 class="card-header">{hit.name}</h5>
           <div class="card-body">
-            <h5 class="card-title">{hit.title}</h5>
-            <p class="card-text">{hit.url} {hit.objectID}</p>
+            <h5 class="card-title">{hit.status}</h5>
+            <p class="card-text">{hit.description}</p>
            
           </div>
         </div>
