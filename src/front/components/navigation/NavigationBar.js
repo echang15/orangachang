@@ -77,13 +77,7 @@ class NavigationBar extends PureComponent<Props, State> {
                 </NavLink>
               </NavItem>
             ))}
-            {isAuthenticated && (
-              <NavItem>
-                <NavLink href="#" onClick={this.handlesDisconnect}>
-                  Disconnect
-                </NavLink>
-              </NavItem>
-            )}
+
           </Nav>
         </Collapse>
       </Navbar>

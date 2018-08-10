@@ -32,7 +32,9 @@ class About extends PureComponent<Props, State> {
         </div>
         <div class="col-lg-4">
           <h1>About Us</h1>
-          <p>There is actually not too much to say. I am just a Software Engineer who likes brewing a little too much</p>          
+          <p>There is actually not too much to say. I am just a Software Engineer who likes brewing a little too much.</p>
+          <h1>Why All This?</h1>
+          <p>Why spend all this time making a site for a simple homebrew operation? Well, this is a learning exercise in learning new technologies, specifically Amazon Web Services (API Gateway, DynamoDB, Lambda, IAM, Chalice), and Webpack/Node</p>
         </div>
       </div>
 
@@ -43,9 +45,6 @@ class About extends PureComponent<Props, State> {
               <h2 class="card-title">Brewery</h2>
               <p class="card-text">We have a pretty simple setup. We run a 30amp 5500W electric brew-in-a-bag setup. This is controlled via a homemade installation of CraftBeerPi.</p>
             </div>
-            <div class="card-footer">
-              <a href="#" class="btn btn-primary">More Info</a>
-            </div>
           </div>
         </div>
         <div class="col-md-4 mb-4">
@@ -53,7 +52,8 @@ class About extends PureComponent<Props, State> {
             <div class="card-body">
               <h2 class="card-title">Collaborators</h2>
               <p class="card-text">
-                Rob Riedel <br />
+                My awesome friend and co-brewer Rob Riedel <br />
+                Knights Hockey <br />
 
               </p>
             </div>            
@@ -64,12 +64,9 @@ class About extends PureComponent<Props, State> {
             <div class="card-body">
               <h2 class="card-title">Credits</h2>
               <p class="card-text">
-                Logo - Caitlin
-                CraftPeerPi - www.CraftBeerPi
+                Awesome Logo by Caitlin Olszewski - <a target="_blank" href="https://www.caitlinolszewski.com">https://www.caitlinolszewski.com/</a> <br />
+                CraftBeerPi - www.CraftBeerPi
               </p>
-            </div>
-            <div class="card-footer">
-              <a href="#" class="btn btn-primary">More Info</a>
             </div>
           </div>
         </div>

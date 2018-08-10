@@ -32,8 +32,8 @@ class Home extends PureComponent<Props, State> {
   render() {
     return (
       <div>
-        <div class="text-center">
-          <img src={require('../../../../images/logo.jpg')} class="img-responsive center-block" />
+        <div className="text-center">
+          <img src={require('../../../../images/logo.jpg')} className="img-responsive center-block" />
         </div>
         <Jumbotron>
           <HomeInfo>
@@ -42,6 +42,12 @@ class Home extends PureComponent<Props, State> {
               <Link className="btn btn-success btn-lg" to={'/about'}>
                 <i className="fa fa-info" />
                 &nbsp; About
+              </Link>
+              &nbsp;
+    
+              <Link className="btn btn-success btn-lg" to={'/beers'}>
+                <i className="fa fa-info" />
+                &nbsp; Beers
               </Link>
             </p>
           </HomeInfo>

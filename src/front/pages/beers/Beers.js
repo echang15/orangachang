@@ -29,11 +29,7 @@ class Beers extends PureComponent<Props, State> {
   render() {
     return (
       <div>
-        <h1>Whats On Tap</h1>
-        
-        <h1>Upcoming Beers</h1>
-
-        <h1>Planned Beers for the future</h1>        
+        What's on Tap? What's upcoming? What's Planned?     
 
         <Fragment>
          <BeerList />
